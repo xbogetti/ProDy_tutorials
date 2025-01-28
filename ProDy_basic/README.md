@@ -1,0 +1,1 @@
+This folder contains a notebook tutorial that explains basic ProDy functions for loading in the structure files, visualization, selections, retrieving data, calculating structural properties, aligning structures, etc. The folder prody_basic_files are the plots generated using the tutorial. For more information, please refer to the comments of the tutorial and the ProDy website. 
