@@ -34,7 +34,7 @@ essa.writeESSAZscoresToPDB()
 
 #Quick plotting
 resnum = np.arange(0, essa_zscores.shape[0], 1)
-##This PDB starts with residue 4
+##This PDB starts with residue 26
 resnum = resnum + 26
 
 plt.figure(figsize=(10, 4))
