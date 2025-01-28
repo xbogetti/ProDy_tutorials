@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 matplotlib.rcParams.update({'font.size':10})
 
-#Load structure. In this example, we load the chain A.
+#Load structure. In this example, we load chain A of our example PDB file: 1p38.pdb. You may want to change the name of the file that you want to analyze.
 pdb = parsePDB('1p38.pdb', chain='A')
 mol = pdb.protein 
 #Select the alpha-carbons
@@ -18,13 +18,13 @@ gnm.calcModes(n_modes=10)
 
 # The following commands can be used to extend the gnm modes from alpha-carbons to all atoms. This step may be needed for visualization using softwares such as PyMOL and VMD.
 gnm_aa, atoms_all = extendModel(gnm, mol_ca, mol)
-# The follwing command cn be used to save an NMD file, which is a plain text files that contain at least normal mode and system coordinate data. NMD files can be visualized using Normal Mode Wizard within the VMD software. ProDy functions writeNMD() and parseNMD() can be used to read and write NMD files.
+## The follwing command cn be used to save an NMD file, which is a plain text files that contain the normal modes and system coordinate data. NMD files can be visualized using Normal Mode Wizard within the VMD software. ProDy functions writeNMD() and parseNMD() can be used to read and write NMD files.
 writeNMD('1p38_gnm_aa.nmd', gnm_aa, mol)
 
-#Save the GNM modes for plotting later. If you would like to save the GNM modes calculated above, please use the following commands:
+##Save the GNM modes for plotting later. If you would like to save the GNM modes calculated above, please use the following commands:
 saveAtoms(mol_ca, '1p38_CA_atoms')
 saveModel(gnm, '1p38_CA')
-#Save the GNM modes for the extended GNM modes:
+##Save the extended GNM modes:
 saveAtoms(mol, '1p38_all_atoms')
 saveModel(gnm_aa, '1p38_all')
 

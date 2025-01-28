@@ -1,1 +1,1 @@
-The tutorial prody_gnm_quick_start.py is a python script to prepare you with a quick start
+The tutorial prody_gnm_quick_start.py is a python script to prepare you with minimal commands for calculating GNM normal modes of a given structure, saving the models, and a quick plotting scripts for visualizing the mode profiles. If you are interested in a comprehensive set of GNM functions and ProDy plotting function, please follow the comprehensive notebook tutorial: prody_gnm.ipynb and also the ProDy website.   
