@@ -1,1 +1,1 @@
-ProDy tutorials
+ProDy Tutorials
