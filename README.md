@@ -1,1 +1,1 @@
-ProDy tutorials
+A Suite of ProDy Tutorials
